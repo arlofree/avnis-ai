@@ -38,7 +38,7 @@ async function sendMessage() {
     const response =
       await fetch(
 
-        "http://localhost:3000/chat",
+        "/chat",
 
         {
 
