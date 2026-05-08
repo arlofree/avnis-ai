@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>AI Astrology</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>AVNIS AI</h1>
+
+    <input
+      type="text"
+      id="name"
+      placeholder="Your Name"
+    >
+
+    <input
+      type="date"
+      id="dob"
+    >
+
+    <input
+      type="time"
+      id="tob"
+    >
+
+    <input
+      type="text"
+      id="lat"
+      placeholder="Latitude"
+      value="26.8467"
+    >
+
+    <input
+      type="text"
+      id="lon"
+      placeholder="Longitude"
+      value="80.9462"
+    >
+
+    <select id="mode">
+
+      <option value="vedic">
+        Vedic Astrologer
+      </option>
+
+      <option value="practical">
+        Practical Advisor
+      </option>
+
+      <option value="psychology">
+        Psychological Guide
+      </option>
+
+    </select>
+
+    <textarea
+      id="question"
+      placeholder="Ask your question..."
+    ></textarea>
+
+    <button onclick="sendMessage()">
+      Ask AI
+    </button>
+
+    <div id="chatbox"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
